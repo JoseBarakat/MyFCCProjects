@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="frame">
+  <div id="4canvas">
+    
+    <div id="controls">
+      <h1 class="brand">Simon<sup>®</sup></h1>
+    
+      <div>
+        <!-- Start Button (Bootstrap) -->
+        <button type="submit" class="btn btn-success btn-md" data-toggle="button" aria-pressed="false" autocomplete="off">
+          <i class="material-icons">play_arrow</i>
+        </button>
+        <!-- End -->
+        
+        <!-- LCD Display -->
+        <div class="display inline">
+          <h1 class="count led-off">--</h1>
+        </div>
+        <!-- End -->
+        
+        <!-- Strict Mode Button (Bootstrap) -->
+        <button type="submit" class="btn btn-danger btn-md" data-toggle="button" aria-pressed="false" autocomplete="off">
+          <i class="material-icons">face</i>
+        </button>
+        <!--End of Strict Mode Button-->
+      </div>
+      
+      <!-- Rounded On/Off switch -->
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+        <label class="onoffswitch-label" for="myonoffswitch">
+          <span class="onoffswitch-inner"></span>
+          <span class="onoffswitch-switch"></span>
+        </label>
+      </div>
+    </div>
+    
+    <div>
+      <canvas id="green"></canvas>
+      <canvas id="red"></canvas>
+    </div>
+    <div>
+      <canvas id="yellow"></canvas>
+      <canvas id="blue"></canvas>
+    </div>
+  </div>
+    
+</div>
+<!--End of frame-->
+
+</body>
+
+</html>
