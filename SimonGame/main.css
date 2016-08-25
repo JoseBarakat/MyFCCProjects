@@ -1,0 +1,233 @@
+/*Generic CSS (Aplies to all devices)*/
+@import 'https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bungee+Inline|VT323';
+
+body {
+  /*
+  CSS3 Patterns Gallery. (Carbon) 
+  by Atle Mo (design), Sébastien Grosjean (code)
+  */
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+              linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0,
+              linear-gradient(27deg, #222 5px, transparent 5px) 0 10px,
+              linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+              linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+              linear-gradient(#1d1d1d 36%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+/*Wrapper*/
+#frame {
+  background-color: #333333;
+  height:414px;
+  width: 414px;
+  margin: -207px 0 0 -207px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 5px;
+  border-radius: 50%;  
+}
+/*End*/
+
+#controls {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  margin: -125px 0 0 -125px;
+  top: 50%; left:50%;
+  border: 4px solid #333333;
+  border-radius: 50%;
+  background: white;
+  text-align: center;
+}
+
+/*Simon title inside white circle*/
+.brand {
+  font-family: 'Alfa Slab One', cursive;
+  color: #222;
+  font-size: 4rem;
+  margin-top: 15%;
+  text-align: center;
+}
+/*End*/
+
+/* Display/Counter */
+.display {
+  width:  70px;
+  position: relative;
+  margin: 7px 15px;
+  text-align: center;
+}
+.count {
+  width: px;
+  height: 50px;
+  font-family: 'VT323', monospace;
+  color: #DC0D29;
+  padding: 0px;
+  font-size: 2em;
+  background-color: #32050C;
+  position: relative;
+  border: 4px solid #222;
+  border-radius: 10px;
+  margin: auto;
+}
+.led-off {
+  color: #430710;
+}
+.label {
+  color: #222;
+  font-family: 'Oswald', Arial, sans;
+  font-size: 0.7em;
+  margin-top: 5px;
+  text-align: center;
+}
+.full-red {
+  background-color: #FC0102;
+}
+.clickable {
+  pointer-events: auto;
+  cursor: pointer;
+}
+.led {
+  width: 6px;
+  height: 6px;
+  background-color: #32050C;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 2px solid #222;
+  top: -18px;
+}
+.sw-slot {
+  height: 20px;
+  width: 40px;
+  background-color: #222;
+  position: relative;
+  top: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+/*End*/
+
+/*Giving buttons a rounded shape*/
+.btn {
+  border-radius: 40%;
+}
+
+/* Power On/Off switch*/
+/*Inspiration thanks to: proto.io/freebies/onoff/*/
+.onoffswitch {
+  position: relative;
+  width: 70px;
+  user-select:none;
+  margin: 30px auto;
+}
+.onoffswitch-checkbox {
+  display: none;
+}
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #999999;
+  border-radius: 20px;
+}
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 25px;
+  padding: 0;
+  line-height: 25px;
+  font-size: 12px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 15px;
+  background-color: #34A7C1;
+  color: #FFFFFF;
+  text-align: left;
+}
+.onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 10px;
+  background-color: #EEEEEE;
+  color: #999999;
+  text-align: right;
+}
+.onoffswitch-switch {
+  display: block;
+  width: 30px;
+  margin: -2.5px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 41px;
+  border: 2px solid #999999;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+/*End of Power On/Off Switch*/
+
+/*Canvas color and shape*/
+canvas {
+  width: 200px;
+  height:200px;
+}
+#green {
+  background-color: #27ae60;
+  border-top-left-radius: 100%
+}
+#green-grad {
+  background: radial-gradient(circle, white, #27ae60);
+  border-top-left-radius: 100%
+}
+#red {
+  background-color: #e74c3c;
+  border-top-right-radius: 100%;
+}
+#red-grad {
+  background: radial-gradient(circle, white, #e74c3c);
+  border-top-right-radius: 100%;
+}
+#yellow {
+  background-color: #f1c40f;
+  border-bottom-left-radius: 100%;
+}
+#yellow-grad {
+  background: radial-gradient(circle, white, #f1c40f);
+  border-bottom-left-radius: 100%;
+}
+#blue {
+  background-color: #3498db;
+  border-bottom-right-radius: 100%;
+}
+#blue-grad {
+  background: radial-gradient(circle, white, #3498db);
+  border-bottom-right-radius: 100%;
+}
+/* End */
