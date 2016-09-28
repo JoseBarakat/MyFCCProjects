@@ -1,0 +1,127 @@
+<div class="container text-center">
+	
+  <div class="row">
+    <div class="col s12">
+
+      <!-- Navbar-->
+      <nav>
+        <div class="nav-wrapper grey darken-4">
+          <p class="title left-align valign-wrapper">Wikipedia Viewer</p>
+        </div>
+      </nav>
+      <!-- End of Navbar -->
+
+      <div class="card hoverable">
+
+        <div class="card-content">
+          <p>Search through entire Wikipedia Database.</p>
+        </div>
+
+        <div class="card-content">
+
+          <!--Language selector starts-->
+          <div class="input-field">
+            <div class="select-wrapper">
+              <span class="caret">▼</span>
+              <select required id="setLanguage" class="initialized" size="4">
+                <option value="" disabled="" selected="">Choose your language</option>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="pt">Portuguese</option>
+                <option value="de">German</option>
+                <option value="fr">French</option>
+                <option value="it">Italian</option>
+                <option value="ru">Russian</option>
+              </select>
+            </div>
+          </div>
+          <!-- End of Language Selector -->
+
+          <!-- Search bar -->
+          <nav>
+            <div class="nav-wrapper">
+              <form class="search grey darken-4">
+                <div class="input-field">
+                  <input id="searchterm" type="search" 
+                         placeholder="Search" required>
+                  <label for="search">
+                <i id="search" class="material-icons">search</i>
+              </label>
+                  <i id="close" class="material-icons">close</i>
+                </div>
+              </form>
+            </div>
+          </nav>
+          <!-- End of Search bar -->
+        </div>
+
+        <!-- Results divs -->
+        <div class="container">
+          <div class="row">
+            <div class="col s2 m2 l3"></div>
+            <div class="col s8 m8 l6">
+              <ul class="" id="results">
+                <li id="link0"></li>
+                <li id="link1"></li>
+                <li id="link2"></li>
+                <li id="link3"></li>
+                <li id="link4"></li>
+                <li id="link5"></li>
+                <li id="link6"></li>
+                <li id="link7"></li>
+                <li id="link8"></li>
+                <li id="link9"></li>
+              </ul>
+            </div>
+            <div class="col s2 m2 l3"></div>
+          </div>
+        </div>
+        <!-- End of Results -->
+
+        <!-- Footer -->
+        <footer class="page-footer grey darken-4">
+          <div class="container">
+            <div class="row">
+
+              <div class="col l6 s12">
+                <h5 class="white-text">Info & Credits</h5>
+                <p class="grey-text text-lighten-4">This App uses the MediaWiki action API web service to search and preview Wikipedia articles from a Web App interface. It's not an official Wikipedia App. It's only part of an educational project on FreeCodeCamp.
+                </p>
+                <p class="grey-text text-lighten-4">
+                  Thanks to Bruce Young
+                  <a href="http://codepen.io/MutantSpore" target="_blank">
+                    (@MutantSpore)
+                  </a> for helping me with JS code.
+                </p>
+                <p class="grey-text text-lighten-4">Jose Luis Barakat</p>
+                <p>
+                  <a href="mailto:josebarakat@gmail.com" target='_blank'>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                  </a>
+
+                  <a href='https://github.com/JoseBarakat' target='_blank'>
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/jose-barakat-a79b1890" target='_blank'>
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+
+                  <a href="http://codepen.io/JoseBarakat" target='_blank'>
+                    <i class="fa fa-codepen"></i>
+                  </a>
+
+                  <a href="http://www.freecodecamp.com/josebarakat" target='_blank'>
+                    (<i class="fa fa-fire fa-fw"></i>)
+                  </a>
+                </p>
+
+              </div>
+
+
+            </div>
+          </div>
+        </footer>
+        <!-- End of Footer -->
+
+        <!-- End of container -->
