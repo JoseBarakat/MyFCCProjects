@@ -1,0 +1,34 @@
+/*----- Elements -----*/
+body {
+  background-color: #094355;
+  font-family: 'Raleway', sans-serif;
+}
+p { margin: 0 auto; }
+
+/*----- Classes -----*/
+.dark-box {
+  background-color: #0E1619;  
+  padding: 1rem;
+  margin: 1rem;  
+}
+.white-text { color: white; }
+.go-right { text-align: right; }
+.center-text { text-align: center; }
+.icon-sm {
+  max-width:  50px;
+  max-height: 50px;
+}
+
+/*----- IDs -----*/
+#poweredby { width: 50vw; }
+#summary{ margin: auto; }
+#temp-icon{
+  max-height: 100px;
+  max-width:  100px;
+}
+
+/*Show Borders Everywhere*/
+/*
+* {
+  border: dotted 1px grey;
+}
